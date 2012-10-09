@@ -21,6 +21,13 @@
         "symfony/framework-bundle": "2.1.*",
         "symfony/twig-bundle": "2.1.*"
     },
+    "require-dev": {
+        "doctrine/mongodb-odm": "1.*@alpha",
+        "doctrine/mongodb": "1.*@alpha",
+        "doctrine/mongodb-odm-bundle": "3.0.*@alpha",
+        "phpspec/php-diff": "dev-master",
+        "phpspec/phpspec2": "1.*@alpha"
+    },
     "suggest": {
         "doctrine/doctrine-bundle": "dev-master",
         "doctrine/mongodb-odm-bundle": "dev-master"
