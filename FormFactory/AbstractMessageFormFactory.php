@@ -41,12 +41,20 @@ abstract class AbstractMessageFormFactory
      */
     protected $messageClass;
 
-    public function __construct(FormFactoryInterface $formFactory, AbstractType $formType, $formName, $messageClass)
+    /**
+     * The validation groups
+     *
+     * @var array
+     */
+    protected $validationGroups;
+
+    public function __construct(FormFactoryInterface $formFactory, AbstractType $formType, $formName, $messageClass, $validationGroups)
     {
         $this->formFactory = $formFactory;
         $this->formType = $formType;
         $this->formName = $formName;
         $this->messageClass = $messageClass;
+        $this->validationGroups = $validationGroups;
     }
 
     /**

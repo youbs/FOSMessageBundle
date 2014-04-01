@@ -17,6 +17,9 @@
             <argument type="service" id="fos_message.new_thread_form.type" />
             <argument>%fos_message.new_thread_form.name%</argument>
             <argument>%fos_message.new_thread_form.model%</argument>
+            <argument type="collection">
+                <argument>Default</argument>
+            </argument>
         </service>
 
         <service id="fos_message.reply_form.factory.default" class="FOS\MessageBundle\FormFactory\ReplyMessageFormFactory" public="false">
@@ -24,6 +27,9 @@
             <argument type="service" id="fos_message.reply_form.type" />
             <argument>%fos_message.reply_form.name%</argument>
             <argument>%fos_message.reply_form.model%</argument>
+            <argument type="collection">
+                <argument>Default</argument>
+            </argument>
         </service>
 
         <service id="fos_message.new_thread_form.handler.default" class="FOS\MessageBundle\FormHandler\NewThreadMessageFormHandler" scope="request" public="false">
